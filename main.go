@@ -12,7 +12,7 @@ import (
 
 func main() {
 	a := app.New()
-	w := a.NewWindow("Калькулятор")
+	w := a.NewWindow("GO Калькулятор")
 	w.Resize(fyne.NewSize(400, 300))
 
 	label1 := widget.NewLabel("Введите первое число:")
@@ -25,9 +25,9 @@ func main() {
 
 	btn := widget.NewButton("ПОСЧИТАТЬ", func() {
 		n1, err := strconv.ParseFloat(entry1.Text, 64)
-		n2, er := strconv.ParseFloat(entry2.Text, 64)
+		n2, err2 := strconv.ParseFloat(entry2.Text, 64)
 
-		if err != nil || er != nil {
+		if err != nil || err2 != nil {
 			answer.SetText("УЧИ МАТЕМАТИКУ!")
 		} else {
 			sum := n1 + n2
