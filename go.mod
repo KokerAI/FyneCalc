@@ -1,8 +1,8 @@
-module KokaModule
+module kokamodule
 
 go 1.17
 
-require fyne.io/fyne/v2 v2.1.2
+require fyne.io/fyne/v2 v2.1.4
 
 require (
 	github.com/davecgh/go-spew v1.1.1 // indirect
