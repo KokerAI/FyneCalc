@@ -16,6 +16,9 @@ func main() {
 	w := a.NewWindow("GO Калькулятор")
 	w.Resize(fyne.NewSize(400, 300))
 
+	icon, _ := fyne.LoadResourceFromPath("app.png")
+	w.SetIcon(icon)
+
 	url, _ := url.Parse("https://sun9-42.userapi.com/impf/c830309/v830309737/153902/kVXyXLeUyR4.jpg?size=762x670&quality=96&sign=b0e291b82e0ee77014e67bc29cbf3298&type=album")
 
 	link := widget.NewHyperlink("Автор программы", url)
